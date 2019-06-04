@@ -52,4 +52,5 @@ sudo apt-get install libnccl-dev
 ## 參考資料 : 
 1. https://yangcha.github.io/CUDA90/
 2. nvidia-driver 安裝 / 更新 : https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07#install-nvidia-graphics-driver-via-apt-get
+3. 這個有安裝成功，強烈建議使用 .run 安裝，不要用 apt-get 裝 nvidia-driver : https://www.itread01.com/content/1549538125.html
 
