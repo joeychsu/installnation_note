@@ -27,8 +27,8 @@ sudo apt-get install libnccl-dev
 *	Reboot the system to load the NVIDIA drivers.
 *	Set up the development environment by modifying the PATH and LD_LIBRARY_PATHvariables, also add them to the end of .bashrc file:
 ```
-export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 * 如果在 Ubuntu 14 想安裝 cuda 10 可參考 : 
 ```
