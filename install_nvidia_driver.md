@@ -57,7 +57,20 @@ nvidia-smi
 ```
 lsmod | grep nvidia
 ```
-
+## 使用 apt-get 安裝
+* 與 .run 檔相同，需要先禁止整合 nouveau 驅動
+* 刪除舊版 nvidia driver
+* 關閉圖形介面 (sudo service lightdm stop)
+### 1. 更新來源
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa
+```
+### 2. 安裝並重啟
+```
+sudo apt-get install nvidia-430
+sudo reboot
+```
+* 檢查則可以參考第一種的方法的第 5 點
 
 ## 參考資料 : 
 1. Unable to load the kernel module 'nvidia.ko' : https://stackoverflow.com/questions/24734986/unable-to-load-the-kernel-module-nvidia-ko
