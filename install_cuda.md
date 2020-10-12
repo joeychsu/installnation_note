@@ -47,6 +47,23 @@ sudo apt-get install cuda=10.0.130-1
 sudo apt-get install libcudnn7-dev
 sudo apt-get install libnccl-dev
 ```
+* 如果在 Ubuntu 18.04 想安裝 cuda 10.2 可參考 : 
+```
+wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-10-2_10.2.89-1_amd64.deb
+wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb
+wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb
+wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/libnccl2_2.7.8-1+cuda10.2_amd64.deb
+wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/libnccl-dev_2.7.8-1+cuda10.2_amd64.deb
+sudo dpkg -i cuda-10-2_10.2.89-1_amd64.deb
+sudo dpkg -i libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb
+sudo dpkg -i libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb
+sudo dpkg -i libnccl2_2.7.8-1+cuda10.2_amd64.deb
+sudo dpkg -i libnccl-dev_2.7.8-1+cuda10.2_amd64.deb
+sudo apt-get update
+sudo apt-get install cuda=10.2.89-1
+sudo apt-get install libcudnn7-dev
+sudo apt-get install libnccl-dev
+```
 * 各 lib 要求的版本沒有硬性要求，只要結尾都是 cuda10.0_amd64.deb
 
 ## 參考資料 : 
