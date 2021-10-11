@@ -7,6 +7,15 @@ sudo apt-get purge cuda
 sudo apt-get purge libcudnn6
 sudo apt-get purge libcudnn6-dev
 ```
+* 刪除 cuda 可以參考下列指令 (移除 CUDA 版本 > 10.0)
+```
+sudo /usr/local/cuda-10.2/bin/cuda-uninstaller
+```
+* 目前這樣的作法可以適用於 CUDA 10.1、CUDA 10.2。
+* 移除 CUDA 版本 <= 10.0 可以參考
+```
+sudo /usr/local/cuda-10.0/bin/uninstall_cuda_10.0.pl
+```
 *	Install CUDA Toolkit 9.0 and cuDNN 7.0 as follows:
 ```
 wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
@@ -72,3 +81,4 @@ sudo apt-get install libnccl-dev
 3. 這個有安裝成功，強烈建議使用 .run 安裝，不要用 apt-get 裝 nvidia-driver : https://www.itread01.com/content/1549538125.html
 4. 可用指令 lsmod 確認 nvidia-driver 相關程序是否被開啟 : https://blog.csdn.net/u011668104/article/details/79560381
 5. How to disable Nouveau kernel driver : https://askubuntu.com/questions/841876/how-to-disable-nouveau-kernel-driver
+6. [Linux] 簡單的移除 CUDA 心得筆記 https://clay-atlas.com/blog/2020/04/09/%E7%B0%A1%E5%96%AE%E7%9A%84%E7%A7%BB%E9%99%A4-cuda-%E5%BF%83%E5%BE%97%E7%AD%86%E8%A8%98/
